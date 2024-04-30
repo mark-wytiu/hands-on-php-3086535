@@ -1,5 +1,7 @@
 <?php
 
+namespace kindergarten;
+
 function first_day_of_school() {
 	return date('l F j, Y h:i a', mktime(8, 25, 0, 8, 30, 2022));
 }
@@ -19,3 +21,6 @@ function average($grades) {
 function has_honors($gpa) {
 	return true;
 }
+
+echo '<h2>Kindergarten</h2>';
+echo first_day_of_school();

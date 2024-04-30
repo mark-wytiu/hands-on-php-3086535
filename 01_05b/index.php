@@ -1,5 +1,8 @@
 <?php 
 
+require_once( 'kindergarten.php' );
+
+
 function first_day_of_school() {
 	return date('l F j, Y h:i a', mktime(8, 25, 0, 8, 29, 2022));
 }
@@ -16,6 +19,7 @@ function has_honors($gpa) {
 	return $gpa > 3.5;
 }
 
-require_once( 'kindergarten.php' );
-
+echo '<h2>Grades 1-8</h2>';
 echo first_day_of_school();
+
+echo kindergarten\get_dimissal_time();
