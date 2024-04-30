@@ -11,6 +11,6 @@
     </head>
     <body>
         <h1>Welcome to My Website</h1>
-				<p>There have been <b><?php echo get_visitors(); ?></b> visitors so far.</p>
+				str_split
     </body>
 </html>
