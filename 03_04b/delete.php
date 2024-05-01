@@ -21,6 +21,15 @@
 		$db
 	);
 	
+	$name = $_GET['name'];
+	$result = $mysqli->query("DELETE FROM speakers WHERE name='$name'");
+	
+	if ($result) {
+		echo "$name . Speaker deleted successfully";
+	} else {
+		echo "Error deleting speaker: ";
+	}
+	
 	?>
 	<p><a href="index.php">Go Back</a></p>
 </body>
