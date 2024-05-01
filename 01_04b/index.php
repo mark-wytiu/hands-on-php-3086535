@@ -22,7 +22,7 @@ class MyConnect {
 	}
 	
 	public function get_info( $query ) {
-		//STUB
+		
 	}
 	
 	public function set_info( $query ) {
